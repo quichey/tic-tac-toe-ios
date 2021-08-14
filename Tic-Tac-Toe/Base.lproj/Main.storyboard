@@ -109,6 +109,17 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="square0" destination="bZ7-Ng-n1r" id="dZ2-aO-6eN"/>
+                        <outlet property="square1" destination="eYO-d9-ZqN" id="Ly8-sB-2B0"/>
+                        <outlet property="square2" destination="bmI-VH-pAB" id="enA-60-D4q"/>
+                        <outlet property="square3" destination="rSo-df-WNE" id="jLW-uc-YrE"/>
+                        <outlet property="square4" destination="vs0-lM-W2P" id="htz-FS-k6R"/>
+                        <outlet property="square5" destination="np1-Cv-4nD" id="x8P-Ee-Mpf"/>
+                        <outlet property="square6" destination="oNU-Sf-5pr" id="8rG-Ow-D6Y"/>
+                        <outlet property="square7" destination="4qf-bK-2A0" id="YB9-bP-UZ6"/>
+                        <outlet property="square8" destination="lWX-1l-kqP" id="vDN-09-q72"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
