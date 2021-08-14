@@ -9,29 +9,34 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet var squareLabel0: UILabel!
-    @IBOutlet var squareLabel1: UILabel!
-    @IBOutlet var squareLabel2: UILabel!
-    @IBOutlet var squareLabel3: UILabel!
-    @IBOutlet var squareLabel4: UILabel!
-    @IBOutlet var squareLabel5: UILabel!
-    @IBOutlet var squareLabel6: UILabel!
-    @IBOutlet var squareLabel7: UILabel!
-    @IBOutlet var squareLabel8: UILabel!
-    private var squareLabels: [[UILabel]] = [[], [], []]
+    @IBOutlet var square0: UIButton!
+    @IBOutlet var square1: UIButton!
+    @IBOutlet var squareButton2: UIButton!
+    @IBOutlet var squareButton3: UIButton!
+    @IBOutlet var squareButton4: UIButton!
+    @IBOutlet var squareButton5: UIButton!
+    @IBOutlet var squareButton6: UIButton!
+    @IBOutlet var squareButton7: UIButton!
+    @IBOutlet var squareButton8: UIButton!
+ 
+    private var squareButtons: [[UIButton]] = [[], [], []]
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        squareLabels = [[squareLabel0], [squareLabel1], [squareLabel2],
-                        [squareLabel3], [squareLabel4], [squareLabel5],
-                        [squareLabel6], [squareLabel7], [squareLabel8]]
-        for labelArr in squareLabels {
-            for label in labelArr {
-                label.text = ""
+        /*
+        squareButtons = [[squareButton0], [squareButton1], [squareButton2],
+                        [squareButton3], [squareButton4], [squareButton5],
+                        [squareButton6], [squareButton7], [squareButton8]]*/
+        
+        /*
+        for ButtonArr in squareButtons {
+            for Button in ButtonArr {
+                //Button.text = ""
             }
         }
+ */
     }
 
 
