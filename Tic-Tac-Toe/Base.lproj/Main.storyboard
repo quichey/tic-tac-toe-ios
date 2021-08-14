@@ -19,11 +19,92 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2021-08-14 at 2.07.40 AM" translatesAutoresizingMaskIntoConstraints="NO" id="39K-Ki-tYu">
-                                <rect key="frame" x="16" y="156" width="343" height="348"/>
+                                <rect key="frame" x="16" y="159" width="343" height="348"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="89" translatesAutoresizingMaskIntoConstraints="NO" id="BDh-d2-dr8">
+                                <rect key="frame" x="49" y="297" width="277" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rSo-df-WNE">
+                                        <rect key="frame" x="0.0" y="0.0" width="33" height="72"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <state key="normal" title="X">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vs0-lM-W2P">
+                                        <rect key="frame" x="122" y="0.0" width="33" height="72"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <state key="normal" title="X">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="np1-Cv-4nD">
+                                        <rect key="frame" x="244" y="0.0" width="33" height="72"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <state key="normal" title="X">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="89" translatesAutoresizingMaskIntoConstraints="NO" id="U7a-3l-3NH">
+                                <rect key="frame" x="49" y="415" width="277" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oNU-Sf-5pr">
+                                        <rect key="frame" x="0.0" y="0.0" width="33" height="72"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <state key="normal" title="X">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qf-bK-2A0">
+                                        <rect key="frame" x="122" y="0.0" width="33" height="72"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <state key="normal" title="X">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWX-1l-kqP">
+                                        <rect key="frame" x="244" y="0.0" width="33" height="72"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <state key="normal" title="X">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="89" translatesAutoresizingMaskIntoConstraints="NO" id="j7o-jh-M6A">
+                                <rect key="frame" x="49" y="188" width="277" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZ7-Ng-n1r">
+                                        <rect key="frame" x="0.0" y="0.0" width="33" height="72"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <state key="normal" title="X">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYO-d9-ZqN">
+                                        <rect key="frame" x="122" y="0.0" width="33" height="72"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <state key="normal" title="X">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bmI-VH-pAB">
+                                        <rect key="frame" x="244" y="0.0" width="33" height="72"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <state key="normal" title="X">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
