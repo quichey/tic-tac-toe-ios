@@ -33,12 +33,54 @@ class ViewController: UIViewController {
                         [square6], [square7], [square8]]
         
         
-        for ButtonArr in squares {
-            for Button in ButtonArr {
-                Button.setTitle("", for: .normal)
+        for squareArr in squares {
+            for square in squareArr {
+                square.setTitle("", for: .normal)
             }
         }
  
+    }
+    
+    func checkWinState() {
+        
+        // Check Horizontal win
+        var hasHorizantalWin: Bool = false
+        for squareArr in squares {
+            hasHorizantalWin = checkHorizontalWin(squareArr: squareArr)
+            if (hasHorizantalWin) {
+                break;
+            }
+        }
+ 
+    }
+   
+    
+    func checkHorizontalWin(squareArr: [UIButton]) -> Bool {
+        var prevPlayer: String = ""
+        var currPlayer: String
+        for (index, square) in squareArr.enumerated() {
+            currPlayer = square.title(for: .normal)!
+            if (currPlayer == "") {
+                return false
+            }
+            if (index != 0) {
+                if (currPlayer != prevPlayer) {
+                    return false
+                }
+            }
+            prevPlayer = currPlayer
+        }
+        return true
+    }
+    
+    func transpose2DArr(origArr: [[Any]]) -> [[Any]] {
+        var transposed: [[Any]] = [[], [], []]
+        for (origY) in [0, 1, 2] {
+            for (origX) in [0, 1, 2] {
+                transposed[origX][origY] = squares[origY][origX]
+            }
+        }
+        return transposed
     }
     
     func buttonTouchWrapper(sender: UIButton) {
@@ -52,9 +94,11 @@ class ViewController: UIViewController {
         // Change to X or O depending on if it's player 1 or 2's turn
         if (numClicks % 2 == 0) {
             sender.setTitle("X", for: .normal)
+            sender.setTitleColor(.red, for: .normal)
         }
         else {
             sender.setTitle("O", for: .normal)
+            sender.setTitleColor(.blue, for: .normal)
         }
     }
 
