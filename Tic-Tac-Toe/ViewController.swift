@@ -42,7 +42,14 @@ class ViewController: UIViewController {
     }
     
     func buttonTouchWrapper(sender: UIButton) {
+        // Don't change to X or O if already clicked
+        if (sender.title(for: .normal) != "") {
+            return
+        }
+        
         numClicks += 1
+        
+        // Change to X or O depending on if it's player 1 or 2's turn
         if (numClicks % 2 == 0) {
             sender.setTitle("X", for: .normal)
         }
